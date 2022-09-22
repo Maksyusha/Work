@@ -1,11 +1,11 @@
 export default class Accordion {
-  constructor() {
-    this._buttons = document.querySelectorAll('.question__button');
+  constructor(selectors) {
+    this._buttons = document.querySelectorAll('.' + selectors.button);
 
-    this._questionSelector = '.question';
-    this._buttonActiveSelector = 'question__button_active';
-    this._answerSelector = '.question__answer-container';
-    this._answerActiveSelector = 'question__answer-container_opened';
+    this._sectionSelector = selectors.section;
+    this._buttonActiveSelector = selectors.buttonActive;
+    this._answerSelector = selectors.answer;
+    this._answerActiveSelector = selectors.answerActive;
   }
 
   _toggleAnswer() {
@@ -18,7 +18,7 @@ export default class Accordion {
 
   _toggleAccordion(evt) {
     this._button = evt.target;
-    this._answer = evt.target.closest(this._questionSelector).querySelector(this._answerSelector);
+    this._answer = evt.target.closest('.' + this._sectionSelector).querySelector('.' + this._answerSelector);
 
     this._button.classList.toggle(this._buttonActiveSelector);
 

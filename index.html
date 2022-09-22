@@ -8,33 +8,39 @@
   </head>
   <body class="page">
     <header class="header">
-      <div class="header__logo">Здесь должно быть лого</div>
-      <nav class="header__navigation">
-        <ul class="header__menu">
-          <li class="header__menu-item"><a class="header__menu-link" href="#">Обучение</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#">Гарантии</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#">Цены</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#">FAQ</a></li>
-          <li class="header__menu-item"><a class="header__menu-button" href="#">Записаться на курсы</a></li>
+      <div class="header__hamburger-container">
+        <input class="header__hamburger-toggle" type="checkbox" id="hamburger">
+        <label class="header__hamburger-button" for="hamburger">
+          <span class="header__hamburger-line"></span>
+          <span class="header__hamburger-line"></span>
+          <span class="header__hamburger-line"></span>
+        </label>
+      </div>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item"><a class="header__menu-link" href="#education">Обучение</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="#guarantees">Гарантии</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="#prices">Цены</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="#faq">FAQ</a></li>
+          <li class="header__menu-item"><a class="header__menu-button" href="https://t.me/sxemabyrtk" target="_blank">Записаться на курсы</a></li>
         </ul>
       </nav>
     </header>
     <main class="content">
       <section class="intro">
         <img class="intro__image" src="./images/intro-man.png" alt="Фон">
-        <div class="intro__overlay">
+        <div class="intro__text-container">
           <h1 class="intro__title">100% к банку на P2P арбитраже криптовалюты за месяц работы!</h1>
           <p class="intro__description">Актуальнейшая информация по заработку на арбитраже криптовалюты!</p>
-          <p class="intro__description">*100% в месяц - гарантированный заработок при максимально плотной ежедневной работе. Средний профит за день плотной работы (8+&nbsp;часов&nbsp;работы) = 3-4% от вашей оборотки</p>
         </div>
       </section>
-      <section class="education">
+      <section class="education" id="education">
         <h1 class="education__title">Для чего я запустил обучение?</h1>
         <div class="education__line"></div>
         <p class="education__description">Я действительно предоставляю доступ к самым актуальным связкам и методам работы в сфере арбитажа. Продажа обучений не создает мне конкуренции на рынке, не ухудшает мою работу никаким образом. Дело в том, что заработок с продаж сопоставим с моим доходом с арбитража, но при этом комьюнити учеников помогает мне находить новые инструменты, обмениваться информацией и приводит всех к еще большим результатам. В общем тут все ясно - я люблю деньги, а деньги требуют таких мувов</p>
         <p class="education__description">Представленная на обучении информация не является очередной инфоцыганщиной. Поверьте, я не обладаю серьезной медийкой, но люди обращаются ко мне лишь исходя из моей репутации в узких кругах телеграмм сегмента. Продажу обучения я начал еще в мае этого года. На текущий момент нас чуть больше ста человек. Любая информация, касаемо качества моего обучения доступна каждому. Своих учеников я не скрываю, каждый может написать любому, и пообщаться лично. Так-же я готов предоставить любую информацию, связанную с результатами каждого моего ученика</p>
       </section>
-      <section class="guarantees">
+      <section class="guarantees" id="guarantees">
         <h1 class="guarantees__title">Какие результаты гарантирует мое обучение?</h1>
         <div class="table">
           <div class="table__cards-container table__cards-container_color_black table__cards-container_type_grid">
@@ -69,7 +75,7 @@
           </div>
         </div>
       </section>
-      <section class="prices">
+      <section class="prices" id="prices">
         <h1 class="prices__title">Мои курсы</h1>
         <div class="courses">
           <div class="course">
@@ -85,12 +91,6 @@
             <button class="course__button" type="button">Подробнее</button>
           </div>
           <div class="course">
-            <img class="course__image" src="./images/course-2.jpg">
-            <h3 class="course__title">"Красава" - 250 тыс</h3>
-            <p class="course__description">Я проведу вас лично по всем связкам, у вас сразу появится довольно широкая вариация работы. Вы получите все мои контакты с дроповодами в Москве, мои контакты с различными инструментами за рубежом. Я всегда буду поддерживать вас на каждом этапе при работе с любой связкой. По сути говоря, цена обучения лишь зависит от траты моего времени.</p>
-            <button class="course__button" type="button">Подробнее</button>
-          </div>
-          <div class="course">
             <img class="course__image" src="./images/course-3.jpg">
             <h3 class="course__title">"GOD" - 300 тыс</h3>
             <p class="course__description">Я проведу вас лично по всем связкам, у вас сразу появится довольно широкая вариация работы. Вы получите все мои контакты с дроповодами в Москве, мои контакты с различными инструментами за рубежом. Я всегда буду поддерживать вас на каждом этапе при работе с любой связкой. По сути говоря, цена обучения лишь зависит от траты моего времени, и на данном тарифе я с вами на связи 24/7.</p>
@@ -98,8 +98,17 @@
           </div>
         </div>
       </section>
-      <section class="faq">
+      <section class="faq" id="faq">
         <h1 class="faq__title">Часто задаваемые вопросы</h1>
+        <div class="question">
+          <div class="question__button-container">
+            <h3 class="question__title">Возможно ли сделать 100% к банку всего за месяц?</h3>
+            <button class="question__button"></button>
+          </div>
+          <div class="question__answer-container">
+            <p class="question__answer">Это гарантированный заработок при максимально плотной ежедневной работе. Средний профит за день плотной работы (8+&nbsp;часов&nbsp;работы) = 3-4% от вашей оборотки</p>
+          </div>
+        </div>
         <div class="question">
           <div class="question__button-container">
             <h3 class="question__title">Когда старт обучения?</h3>
@@ -165,6 +174,11 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <h1 class="footer__title">Подписывайся на мой telegram</h1>
+      <a class="footer__link" href="https://t.me/sxemabyrtk" target="_blank">Ссылка на telegram</a>
+      <p class="footer__copyright">© RTK 2022</p>
+    </footer>
     <script type="module" src="./index.js"></script>
   </body>
 </html>
